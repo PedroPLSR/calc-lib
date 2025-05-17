@@ -11,7 +11,6 @@ Faça computações revolucionárias, nunca antes vistas, tal como:
 ## Instalação
 
 Copia e cola no teu pom:
-
 ```xml
 <dependency>
   <groupId>org.fbp</groupId>
@@ -20,8 +19,13 @@ Copia e cola no teu pom:
 </dependency>
 ```
 
+Taca isso no terminal:
+```shell
+mvn install
+```
 ## Uso
 
+Isso aqui:
 ```java
 import org.fbp.Calculator;
 
@@ -38,8 +42,7 @@ public class Main {
 }
 ```
 
-Vai resultar em:
-
+Vai resultar nisso aqui:
 ```shell
 Soma: 5.0
 Subtração: 2.0

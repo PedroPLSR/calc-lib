@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
+
   @Test
   @DisplayName("Test addition of two numbers")
   public void testSum() {
@@ -22,7 +23,7 @@ public class CalculatorTest {
 
   @Test
   @DisplayName("Test subtraction of two numbers")
-  public void testsubtract() {
+  public void testSubtract() {
     assertEquals(2.0, Calculator.subtract(5, 3).doubleValue(),
       "5 - 3 should equal 2");
 
@@ -35,7 +36,7 @@ public class CalculatorTest {
 
   @Test
   @DisplayName("Test multiplication of two numbers")
-  public void testmultiply() {
+  public void testMultiply() {
     assertEquals(15.0, Calculator.multiply(5, 3).doubleValue(),
       "5 * 3 should equal 15");
 
@@ -48,9 +49,10 @@ public class CalculatorTest {
     assertEquals(0.0, Calculator.multiply(5, 0).doubleValue(),
       "5 * 0 should equal 0");
   }
+
   @Test
   @DisplayName("Test division of two numbers")
-  public void testdivide() {
+  public void testDivide() {
     assertEquals(2.0, Calculator.divide(6, 3).doubleValue(),
       "6 / 3 should equal 2");
 
@@ -63,13 +65,13 @@ public class CalculatorTest {
 
   @Test
   @DisplayName("Test division by zero throws exception")
-  public void testdividePorZero() {
+  public void testDividePorZero() {
     assertThrows(ArithmeticException.class, () -> Calculator.divide(5, 0), "Division by zero should throw ArithmeticException");
   }
 
   @Test
   @DisplayName("Test power operation")
-  public void testtoTheN() {
+  public void testToTheN() {
     assertEquals(8.0, Calculator.toTheN(2, 3).doubleValue(),
       "2^3 should equal 8");
 
@@ -85,5 +87,5 @@ public class CalculatorTest {
     assertEquals(1.0, Calculator.toTheN(5, 0).doubleValue(),
       "5^0 should equal 1");
   }
-  
+
 }

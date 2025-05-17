@@ -48,4 +48,42 @@ public class CalculatorTest {
     assertEquals(0.0, Calculator.multiply(5, 0).doubleValue(),
       "5 * 0 should equal 0");
   }
+  @Test
+  @DisplayName("Test division of two numbers")
+  public void testdivide() {
+    assertEquals(2.0, Calculator.divide(6, 3).doubleValue(),
+      "6 / 3 should equal 2");
+
+    assertEquals(1.5, Calculator.divide(4.5, 3.0).doubleValue(),
+      "4.5 / 3.0 should equal 1.5");
+
+    assertEquals(-2.0, Calculator.divide(6, -3).doubleValue(),
+      "6 / (-3) should equal -2");
+  }
+
+  @Test
+  @DisplayName("Test division by zero throws exception")
+  public void testdividePorZero() {
+    assertThrows(ArithmeticException.class, () -> Calculator.divide(5, 0), "Division by zero should throw ArithmeticException");
+  }
+
+  @Test
+  @DisplayName("Test power operation")
+  public void testtoTheN() {
+    assertEquals(8.0, Calculator.toTheN(2, 3).doubleValue(),
+      "2^3 should equal 8");
+
+    assertEquals(27.0, Calculator.toTheN(3.0, 3.0).doubleValue(),
+      "3.0^3.0 should equal 27.0");
+
+    assertEquals(0.25, Calculator.toTheN(2, -2).doubleValue(),
+      "2^(-2) should equal 0.25");
+
+    assertEquals(0.0, Calculator.toTheN(0, 5).doubleValue(),
+      "0^5 should equal 0");
+
+    assertEquals(1.0, Calculator.toTheN(5, 0).doubleValue(),
+      "5^0 should equal 1");
+  }
+  
 }

@@ -5,8 +5,8 @@ public class Calculator {
   public static Number sum(Number a, Number b) {
     return a.doubleValue() + b.doubleValue();
   }
-  
-    public static Number subtract(Number a, Number b) {
+
+  public static Number subtract(Number a, Number b) {
     return a.doubleValue() - b.doubleValue();
   }
 
@@ -24,5 +24,4 @@ public class Calculator {
   public static Number toTheN(Number a, Number b) {
     return Math.pow(a.doubleValue(), b.doubleValue());
   }
-
 }

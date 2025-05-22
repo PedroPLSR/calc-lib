@@ -16,7 +16,7 @@ public class Calculator {
 
   public static Number divide(Number a, Number b) {
     if (b.doubleValue() == 0) {
-      throw new ArithmeticException("Divisão por zero não é permitida.");
+      throw new ArithmeticException("Divisão por zero é proibida.");
     }
     return a.doubleValue() / b.doubleValue();
   }

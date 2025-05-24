@@ -11,7 +11,7 @@ public class CalculatorTest {
   @Test
   @DisplayName("Test addition of two numbers")
   public void testSum() {
-    assertEquals(5.0, Calculator.sum(3, 3).doubleValue(),
+    assertEquals(5.0, Calculator.sum(2, 3).doubleValue(),
       "2 + 3 should equal 5");
 
     assertEquals(5.5, Calculator.sum(2.5, 3.0).doubleValue(),
